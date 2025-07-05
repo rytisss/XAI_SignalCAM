@@ -15,25 +15,29 @@ A non-trainable CAM output layer is added after the global average pooling layer
 The explainability output is generated post-training and does not affect model parameters. In binary classification, one CAM map is produced. For multiclass problems, separate maps can be created per class. Importantly, this addition increases computational complexity by only ~15% while maintaining the same number of parameters (on the presented architecture).  
 <img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/xai_branch.png" width="300"/>
 
-## Quick start (installation)
+### Quick start (installation)
 
-Clone repository:<br />
+1. Clone repository:<br />
 ```
 git clone https://github.com/rytisss/XAI_SignalCAM.git
 cd XAI_SignalCAM
 ```
 
-Execute the line in the terminal to set up the environment (install 3rdParties):<br />
+2. Execute the line in the terminal to set up the environment (install 3rdParties):<br />
 ```
 pip install -r requirements.txt
 ```
 
-Open **Jupyter**:
+3. Open **Jupyter**:
 ```
 jupyter notebook
 ```
 
+4. Launch [ptbxl_data_classification.ipynb](https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/ptbxl_data_classification.ipynb)!
 
 
 ## Content overview
 PTB-XL data wrangling sample in [**ptbxl_data_loader.ipynb**](https://github.com/rytisss/SignalCNNTransformer/blob/main/ptbxl_data_loader.ipynb)
+
+## Aknowledgement  
+This research was supported by the CVDLINK project (EU Horizon grant agreement N°101137278)
