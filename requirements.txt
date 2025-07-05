@@ -1,0 +1,12 @@
+ecgmentations==0.0.8
+wfdb==4.2.0
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+missingno==0.5.2
+tqdm==2.2.3
+scikit-learn==1.6.1
+torch==2.5.1
+torchsummary==1.5.1
+fvcore==0.1.5.post20221221
+notebook==7.3.2
