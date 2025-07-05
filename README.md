@@ -8,7 +8,8 @@ This repository describes data wrangling for the [PTBXL](https://physionet.org/c
 - Explainability analysis and visualization
 <div align="center">
 <img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/demo_xai_size_reduced.gif" width="600"/>
-</div>
+</div>  
+
 ### Integrated explainability idea
 This work adapts a class activation map (CAM)-based explainability technique, designed for 1D time-series ECG signals. The method enhances model interpretability by identifying which parts of the input signal most influenced the prediction.  
 A non-trainable CAM output layer is added after the global average pooling layer. It computes feature importance by taking the dot product of the latent feature maps and the output layer weights. The result is a single explainability heatmap aligned with the input signal, rescaled to match its original length and normalized to the [0, 1] range.  
