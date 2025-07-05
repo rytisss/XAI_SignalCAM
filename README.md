@@ -2,7 +2,7 @@
 Playground for ECG signal processing with deep learning model. CNN and transformer-based (or hybrid) architectures are modeled for ECG (or other) signal processing. 
 ### Problem
 This repository describes data wrangling for the PTBXL dataset and binary classification problem where the data is separated into 2 classes **NORMAL** and **ABNORMAL**:  
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/ecg_binary_classification.png" width="600"/>
+<img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/demo_xai_size_reduced.gif" width="600"/>
 
 ### Data
 PTBXL 12 lead ECG is utilized as input for classification:  
