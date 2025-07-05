@@ -41,8 +41,19 @@ jupyter notebook
 ## Content overview
 PTB-XL data wrangling sample in [**ptbxl_data_loader.ipynb**](https://github.com/rytisss/SignalCNNTransformer/blob/main/ptbxl_data_loader.ipynb)
 
+## Citation (will be updated) 
+```
+@inproceedings{augustauskas2025lightweight,
+  title={Lightweight Data-driven ECG Classification Approach with Explainable CAM Output},
+  author={Augustauskas, Rytis and Rodrigues, Ana Santos and Sokas, Daivaras and Bularca, Otilia and Marozas, Vaidotas},
+  booktitle={2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  year={2025},
+  organization={IEEE}
+}
+```
+
 ## Aknowledgement  
 This research was supported by the [CVDLINK](https://cvdlink-project.eu/) project (EU Horizon grant agreement N°101137278)
 <div align="center">
-<img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/CVDLINK_logo-v.png" width="600"/>
+<img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/CVDLINK_logo-v.png" width="450"/>
 </div>
