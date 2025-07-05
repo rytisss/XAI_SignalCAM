@@ -1,7 +1,12 @@
 # Lightweight Data-driven ECG Classification Approach with Explainable CAM Output
-This repository contains the implementation of the lightweight CNN-based ECG classification approach with integrated explainable AI (XAI) capabilities presented in the paper **"Lightweight Data-driven ECG Classification Approach with Explainable CAM Output"** at **The Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)** 2025 by Rytis Augustauskas, Ana Santos Rodrigues, Daivaras Sokas, Otilia Bularca, and Vaidotas Marozas.
+This repository contains the implementation of the lightweight CNN-based ECG classification approach with integrated explainable AI (XAI) capabilities presented in the paper **"Lightweight Data-driven ECG Classification Approach with Explainable CAM Output"** at **The Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025** by Rytis Augustauskas, Ana Santos Rodrigues, Daivaras Sokas, Otilia Bularca, and Vaidotas Marozas.
 ### High-level overview
-This repository describes data wrangling for the [PTBXL](https://physionet.org/content/ptb-xl/1.0.3/) dataset and binary classification problem, where the data is separated into 2 classes **NORMAL** and **ABNORMAL**, with explainability in single iteration (*approach can be applied in multiclass classification problems*):  
+This repository describes data wrangling for the [PTBXL](https://physionet.org/content/ptb-xl/1.0.3/) dataset and binary classification problem, where the data is separated into 2 classes **NORMAL** and **ABNORMAL**. While the current implementation is designed for binary classification with integrated explainability in a single iteration, the approach is also adaptable to multiclass classification tasks and supports different CNN architectures. The codebase includes the full workflow:
+- Data loading and overview
+- Dataset splitting and preprocessing (with optional augmentation)
+- Model training and evaluation
+- Explainability analysis and visualization
+
 <img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/demo_xai_size_reduced.gif" width="600"/>
 
 ### Data
