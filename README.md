@@ -42,4 +42,7 @@ jupyter notebook
 PTB-XL data wrangling sample in [**ptbxl_data_loader.ipynb**](https://github.com/rytisss/SignalCNNTransformer/blob/main/ptbxl_data_loader.ipynb)
 
 ## Aknowledgement  
-This research was supported by the CVDLINK project (EU Horizon grant agreement N°101137278)
+This research was supported by the [CVDLINK](https://cvdlink-project.eu/) project (EU Horizon grant agreement N°101137278)
+<div align="center">
+<img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/CVDLINK_logo-v.png" width="600"/>
+</div>
