@@ -1,7 +1,7 @@
-# SignalCNNTransformer
-Playground for ECG signal processing with deep learning model. CNN and transformer-based (or hybrid) architectures are modeled for ECG (or other) signal processing. 
-### Problem
-This repository describes data wrangling for the PTBXL dataset and binary classification problem where the data is separated into 2 classes **NORMAL** and **ABNORMAL**:  
+# Lightweight Data-driven ECG Classification Approach with Explainable CAM Output
+This repository contains the implementation of the lightweight CNN-based ECG classification approach with integrated explainable AI (XAI) capabilities presented in the paper **"Lightweight Data-driven ECG Classification Approach with Explainable CAM Output"** at **The Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)** 2025 by Rytis Augustauskas, Ana Santos Rodrigues, Daivaras Sokas, Otilia Bularca, and Vaidotas Marozas.
+### High-level overview
+This repository describes data wrangling for the [PTBXL](https://physionet.org/content/ptb-xl/1.0.3/) dataset and binary classification problem, where the data is separated into 2 classes **NORMAL** and **ABNORMAL**, with explainability in single iteration (*approach can be applied in multiclass classification problems*):  
 <img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/demo_xai_size_reduced.gif" width="600"/>
 
 ### Data
