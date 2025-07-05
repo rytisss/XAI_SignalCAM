@@ -9,54 +9,31 @@ This repository describes data wrangling for the [PTBXL](https://physionet.org/c
 
 <img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/demo_xai_size_reduced.gif" width="600"/>
 
-### Data
-PTBXL 12 lead ECG is utilized as input for classification:  
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/orig.png" width="600"/>
+### Integrated explainability idea
+This work adapts a class activation map (CAM)-based explainability technique—originally designed for 2D image data—to 1D time-series ECG signals. The method enhances model interpretability by identifying which parts of the input signal most influenced the prediction.
+A non-trainable CAM output layer is added after the global average pooling layer. It computes feature importance by taking the dot product of the latent feature maps and the output layer weights. The result is a single explainability heatmap aligned with the input signal, rescaled to match its original length and normalized to the [0, 1] range.
+The explainability output is generated post-training and does not affect model parameters. In binary classification, one CAM map is produced. For multiclass problems, separate maps can be created per class. Importantly, this addition increases computational complexity by only ~15% while maintaining the same number of parameters (on the presented architecture).  
+<img src="https://github.com/rytisss/XAI_SignalCAM/blob/feature/research_codebase/res/xai_branch.png" width="400"/>
 
-### Model
-Minimalistic 1D convolutional neural network with binary output is utilized (can be scaled in network class):  
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/network_sample.png" width="600"/>
+## Quick start (installation)
 
-### Pipeline
-The following data pipeline is utilized in this investigation. Step:
-1. Loading signal to the representable container (NumPy array)
-2. Baseline wander removal
-3. Apply standard scaling for each lead separately (according to the training dataset)
-4. Introduce noise and transformation to make more variety of data (introduced only while training)
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/Pipeline.png" width="200"/>
+Clone repository:<br />
+```
+git clone https://github.com/rytisss/XAI_SignalCAM.git
+cd XAI_SignalCAM
+```
 
-
-### XAI
-[Class activation map](http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf) idea is implemented for signal data. Please check the further description to understand the implementation:  
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/CAM_XAI_sample.gif" width="500"/>
-
-## Installation
-Execute line in terminal to set environment:<br />
+Execute the line in the terminal to set up the environment (install 3rdParties):<br />
 ```
 pip install -r requirements.txt
 ```
 
-## Content
+Open **Jupyter**:
+```
+jupyter notebook
+```
+
+
+
+## Content overview
 PTB-XL data wrangling sample in [**ptbxl_data_loader.ipynb**](https://github.com/rytisss/SignalCNNTransformer/blob/main/ptbxl_data_loader.ipynb)
-
-Change the path to the data to start quickly [**PATH_TO_DATA**](https://github.com/rytisss/SignalCNNTransformer/blob/6bec3985a3f3215f080f2ed2ef33b4643d7cb419/ptbxl_data_classification.ipynb#L62)<br />
-
-https://github.com/rytisss/SignalCNNTransformer/assets/22094617/10178b02-da65-449c-b1b2-daa9cfb842df
-
-The example consists of:
-1. Data loading<br />
-2. Visualization
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/orig.png" width="600"/>
-3. Splitting (train, test, valid according to [*We therefore propose to use folds 1-8 as training set, fold 9 as validation set and fold 10 as test set*](https://physionet.org/content/ptb-xl/1.0.3/) <br />
-4. Preprocessing (detrending with 10th degree polynomial)
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/orig_detrend.png" width="600"/>
-5. Scaling (Standard according to the training set)<br />
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/scaling.png" width="600"/>
-6. Augmentation pipeline
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/augmentation_2.png" width="600"/>
-7. Training for classification with automatics learning rate scheduling<br />
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/training_statistics.png" width="600"/>
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/confusion_matrix.png" width="600"/>
-8. Prediction<br /> 
-9. Explainability with CAM as additional non-trainable output to get explainable results with binary prediction<br />
-<img src="https://github.com/rytisss/SignalCNNTransformer/blob/main/res/xai_branch.png" width="300"/>
