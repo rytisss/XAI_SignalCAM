@@ -39,7 +39,8 @@ jupyter notebook
 
 
 ## Content overview
-PTB-XL data wrangling sample in [**ptbxl_data_loader.ipynb**](https://github.com/rytisss/SignalCNNTransformer/blob/main/ptbxl_data_loader.ipynb)
+
+https://github.com/user-attachments/assets/017bd275-c3de-4b07-b89b-71a95e354773
 
 ## Citation (will be updated) 
 ```
