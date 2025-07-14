@@ -81,7 +81,10 @@ jupyter notebook
 
 ## Content overview
 
-https://github.com/user-attachments/assets/017bd275-c3de-4b07-b89b-71a95e354773
+https://github.com/user-attachments/assets/017bd275-c3de-4b07-b89b-71a95e354773  
+
+- [The rendered (exported as HTML) Jupyter Notebook](https://drive.google.com/file/d/1Tg0kK3lpSTrI1GWe1uDUR_hhnKbsRG2u/view?usp=sharing).  
+- [Pretrained weights](https://github.com/rytisss/XAI_SignalCAM/blob/main/model_0.pt) 
 
 ## Citation (will be updated) 
 ```
