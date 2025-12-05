@@ -1,5 +1,5 @@
 # Lightweight Data-driven ECG Classification Approach with Explainable CAM Output
-This repository contains the [PyTorch](https://pytorch.org/) implementation of the lightweight CNN-based ECG classification approach with integrated explainable AI (XAI) capabilities presented in the paper **"Lightweight Data-driven ECG Classification Approach with Explainable CAM Output"** at **The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025** by Rytis Augustauskas, Ana Santos Rodrigues, Daivaras Sokas, Otilia Bularca, and Vaidotas Marozas.  
+This repository contains the [PyTorch](https://pytorch.org/) implementation of the lightweight CNN-based ECG classification approach with integrated explainable AI (XAI) capabilities presented in the paper [**"Lightweight Data-driven ECG Classification Approach with Explainable CAM Output"** at **The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025**](https://ieeexplore.ieee.org/document/11253260) by Rytis Augustauskas, Ana Santos Rodrigues, Daivaras Sokas, Otilia Bularca, and Vaidotas Marozas.  
 <div align="center">
 <img src="https://github.com/rytisss/XAI_SignalCAM/blob/main/res/embs25-mon-143_RA_print_page-0001_scaled.jpg" width="800"/>
 </div>   
@@ -97,7 +97,9 @@ https://github.com/user-attachments/assets/017bd275-c3de-4b07-b89b-71a95e354773
   author={Augustauskas, Rytis and Rodrigues, Ana Santos and Sokas, Daivaras and Bularca, Otilia and Marozas, Vaidotas},
   booktitle={2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
   year={2025},
-  organization={IEEE}
+  organization={IEEE},
+  pages={1--7},
+  doi={10.1109/EMBC58623.2025.11253260}
 }
 ```
 
